@@ -1,3 +1,4 @@
+import Feature from "./sections/Feature"
 import Hero from "./sections/Hero"
 import Navbar from "./sections/Navbar"
 import Partner from "./sections/Partner"
@@ -8,6 +9,7 @@ function App() {
       <Navbar />
       <Hero />
       <Partner />
+      <Feature />
     </div>
   )
 }
