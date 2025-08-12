@@ -1,2 +1,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lustria&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
 @import "tailwindcss";
+
+@font-face {
+  font-family: "Satoshi";
+  src: url("./assets/font/Satoshi-Variable.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@theme {
+  --font-lustria: "Lustria", serif;
+  --font-satoshi: "Satoshi", serif;
+  --color-primary: oklch(17.47% 0.003 325.69);
+  --color-secondary: oklch(32.11% 0 0);
+  --color-tertiary: oklch(17.24% 0.045 246.3);
+}
