@@ -2,6 +2,7 @@ import Feature from "./sections/Feature"
 import Hero from "./sections/Hero"
 import Navbar from "./sections/Navbar"
 import Partner from "./sections/Partner"
+import Pricing from "./sections/Pricing"
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <Hero />
       <Partner />
       <Feature />
+      <Pricing />
     </div>
   )
 }
