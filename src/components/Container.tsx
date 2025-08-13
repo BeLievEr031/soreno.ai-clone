@@ -8,7 +8,7 @@ interface IProp {
 
 function Container({ className, children }: IProp) {
     return (
-        <div className={clsx(className || "py-14 px-40")}>
+        <div className={clsx(className || "py-8 md:py-14 px-4 md:px-40")}>
             {children}
         </div>
     )
