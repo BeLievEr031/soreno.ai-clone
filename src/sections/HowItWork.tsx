@@ -51,15 +51,15 @@ function HowItWork() {
     }, [inViews]);
 
     return (
-        <div className="px-16">
-            <Container className="bg-[#F7F3ED] rounded-2xl py-15">
-                <h1 className="text-center text-6xl font-lustria">How Soreno Works</h1>
-                <p className="text-center w-1/2 mx-auto mt-5 font-satoshi text-lg text-secondary">
+        <div className="px-4 md:px-16">
+            <Container className="bg-[#F7F3ED] rounded-2xl py-10 md:py-15">
+                <h1 className="text-center text-3xl md:text-6xl font-lustria">How Soreno Works</h1>
+                <p className="text-center md:w-1/2 mx-auto mt-5 font-satoshi text-lg text-secondary">
                     An AI-powered interview preparation platform designed to help finance
                     and consulting applicants prepare for their job interviews
                 </p>
 
-                <div className="grid grid-cols-2 gap-20 relative min-h-screen">
+                <div className="md:grid grid-cols-2 gap-20 relative min-h-screen hidden">
                     {/* Left Side */}
                     <div className="pt-[55%] space-y-10 font-satoshi">
                         {howItWorkArr.map((item, idx) => (
@@ -96,7 +96,33 @@ function HowItWork() {
                     />
                 </div>
 
-                <div className="flex justify-center py-10">
+                <div className="block md:hidden">
+                    <div className="pt-8 font-satoshi">
+                        {howItWorkArr.map((item, idx) => (
+                            <div
+                                key={idx}
+                                className="mt-10 px-2">
+                                <div className="flex items-center px-4 py-2 border border-primary/50 w-fit rounded-full gap-2">
+                                    <item.icon size={20} className="text-orange-400" />
+                                    <span className="text-sm md:text-lg text-secondary/90">
+                                        {item.buttonText}
+                                    </span>
+                                </div>
+                                <p className="text-2xl md:text-3xl text-primary mt-4 md:mt-8">
+                                    {item.description}
+                                </p>
+                                <img
+                                    key={currentImage}
+                                    src={images[idx]}
+                                    alt="step"
+                                    className="my-4"
+                                />
+                            </div>
+                        ))}
+                    </div>
+                </div>
+
+                <div className="flex justify-center py-5 md:py-10">
                     <a href="#" className="bg-primary mt-10 text-white shadow-xl px-8 py-3 font-bold rounded-full font-lustria inline-block">
                         Try for free today!
                     </a>
