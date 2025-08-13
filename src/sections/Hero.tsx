@@ -17,7 +17,7 @@ function Hero() {
     return (
         <Container>
 
-            <div className="grid grid-cols-2 gap-x-40 items-center">
+            <div className="grid md:grid-cols-2 gap-x-40 items-center">
                 <div>
                     <span className="border border-primary px-4 py-2 rounded-full font-satoshi">
                         Join 4200+ other interviewees this cycle
@@ -25,6 +25,10 @@ function Hero() {
                     <h1 className="mt-7 text-4xl font-lustria">
                         Master Consulting Case Fundamentals with AI
                     </h1>
+
+                    <div className="md:hidden py-8">
+                        <img src={HeroImg} alt="hero-image.png" className="shadow-hero-img rounded-xl w-[527px]" />
+                    </div>
 
                     <a href="#" className="bg-secondary text-white shadow-xl px-8 py-3 font-bold rounded-full mt-5 font-lustria inline-block">
                         Try for free today!
@@ -54,7 +58,7 @@ function Hero() {
                     <img src={YCombinatorImg} alt="y-combinator.png" className="rounded-md shadow-sm w-[237px] mt-5" />
                 </div>
 
-                <div className="">
+                <div className="hidden md:block">
                     <img src={HeroImg} alt="hero-image.png" className="shadow-hero-img rounded-xl w-[527px]" />
                 </div>
             </div>

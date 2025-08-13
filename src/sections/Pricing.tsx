@@ -14,11 +14,11 @@ function Pricing() {
     return (
         <Container>
             <div className="text-center font-lustria">
-                <h1 className="text-5xl font-bold">Simple pricing</h1>
-                <p className="mt-10 text-4xl text-secondary">Trial with 1 free full mock interview</p>
+                <h1 className="text-3xl md:text-5xl font-bold">Simple pricing</h1>
+                <p className="mt-10 text-2xl md:text-4xl text-secondary">Trial with 1 free full mock interview</p>
             </div>
 
-            <div className="flex justify-center font-lustria gap-5" >
+            <div className="flex flex-col md:flex-row items-center md:justify-center font-lustria gap-5" >
                 <div className="py-10 px-8 w-fit border rounded-2xl border-[#e8d69b] shadow-price-card mt-15">
                     <p className="font-satoshi text-xl">12 Months of Access</p>
                     <div className="flex items-center gap-6 py-5">
@@ -42,7 +42,7 @@ function Pricing() {
                     </a>
                 </div>
 
-                <div className="py-10 px-8 w-fit rounded-2xl shadow-price-card mt-15">
+                <div className="py-10 px-8 w-fit rounded-2xl shadow-price-card mt-4 md:mt-15">
                     <p className="font-satoshi text-xl">1 Months of Access</p>
                     <div className="flex items-center gap-6 py-5">
                         <h1 className="text-5xl font-semibold">$199</h1>
@@ -65,7 +65,7 @@ function Pricing() {
                 </div>
 
             </div>
-            <p className="text-center font-satoshi text-xl text-secondary py-15">All plans come with a 3 day free trial!</p>
+            <p className="text-center font-satoshi text-xl text-secondary py-12 px-7 md:px-0 md:py-15">All plans come with a 3 day free trial!</p>
         </Container>
     )
 }
