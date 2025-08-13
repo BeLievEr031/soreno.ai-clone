@@ -43,14 +43,14 @@ function Feature() {
     return (
         <Container>
             <div className='text-center font-lustria'>
-                <h1 className='text-5xl'>Practice Technical + Behavioural Questions
+                <h1 className='text-3xl md:text-5xl'>Practice Technical + Behavioural Questions
                 </h1>
-                <p className='text-tertiary text-xl mt-5 font-satoshi w-[55%] mx-auto'>
+                <p className='text-tertiary text-xl mt-5 font-satoshi md:w-[55%] mx-auto'>
                     Blending state-of-the-art AI along with deepest set of industry job interview data.
                 </p>
             </div>
 
-            <div className='mt-40 relative min-h-screen'>
+            <div className='mt-20 md:mt-40 relative min-h-screen'>
                 {
                     stickyCardData.map(function (item) {
                         return <StickyCard

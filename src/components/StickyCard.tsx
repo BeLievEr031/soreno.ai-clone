@@ -10,9 +10,9 @@ interface IProp {
 }
 function StickyCard({ cardTitle, description, features, img, className }: IProp) {
     return (
-        <div className={clsx('h-[90vh] sticky top-30 rounded-4xl bg-white border shadow-md border-tertiary/20 grid grid-cols-2 py-14 px-18 gap-x-16', className)}>
+        <div className={clsx('h-[90vh] sticky top-30 rounded-4xl bg-white border shadow-md border-tertiary/20 grid md:grid-cols-2 py-14 px-8 md:px-18 gap-x-16', className)}>
             <div>
-                <p className='text-4xl font-lustria text-primary w-2/3'>{cardTitle}</p>
+                <p className='text-4xl font-lustria text-primary md:w-2/3'>{cardTitle}</p>
                 <p className='text-lg mt-7 text-secondary/80'>
                     {description}
                 </p>
@@ -27,7 +27,7 @@ function StickyCard({ cardTitle, description, features, img, className }: IProp)
                     }
                 </div>
             </div>
-            <img src={img} alt={img} className='mt-10' />
+            <img src={img} alt={img} className='mt-10 hidden md:inline' />
         </div>
     )
 }
