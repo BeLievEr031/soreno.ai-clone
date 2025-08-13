@@ -1,5 +1,6 @@
 import Faq from "./sections/Faq"
 import Feature from "./sections/Feature"
+import Footer from "./sections/Footer"
 import Hero from "./sections/Hero"
 import HowItWork from "./sections/HowItWork"
 import Navbar from "./sections/Navbar"
@@ -16,6 +17,7 @@ function App() {
       <Pricing />
       <HowItWork />
       <Faq />
+      <Footer />
     </div>
   )
 }

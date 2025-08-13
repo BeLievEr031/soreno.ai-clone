@@ -37,7 +37,7 @@ function Faq() {
         },
     ]
     return (
-        <div className='px-16 shadow-2xl'>
+        <div className='px-16'>
             <Container className='bg-white rounded-4xl py-20 px-20'>
                 <h1 className='text-center font-lustria text-5xl'>Frequently Asked Questions</h1>
                 <div className='pt-10'>
