@@ -9,8 +9,8 @@ interface IProp {
 function Question({ question, ans }: IProp) {
     const [open, setOpen] = useState(false)
     return (
-        <div className="px-28 cursor-pointer font-satoshi mt-10" onClick={() => setOpen(!open)} >
-            <div className="flex justify-between">
+        <div className="w-full md:px-28 cursor-pointer font-satoshi mt-5 md:mt-10" onClick={() => setOpen(!open)} >
+            <div className="grid grid-cols-[5fr_1fr] md:flex md:justify-between w-full">
                 <p>{question}</p>
                 <ChevronDown />
             </div>
