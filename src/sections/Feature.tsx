@@ -64,6 +64,12 @@ function Feature() {
                 }
             </div>
 
+            <div className='mt-10 flex justify-center'>
+                <a href="#" className="bg-secondary text-white shadow-xl px-8 py-3 font-bold rounded-full mt-5 font-lustria inline-block">
+                    Try for free today!
+                </a>
+            </div>
+
         </Container>
     )
 }
