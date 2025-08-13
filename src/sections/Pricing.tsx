@@ -65,7 +65,7 @@ function Pricing() {
                 </div>
 
             </div>
-
+            <p className="text-center font-satoshi text-xl text-secondary py-15">All plans come with a 3 day free trial!</p>
         </Container>
     )
 }
