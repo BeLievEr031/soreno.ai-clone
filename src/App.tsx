@@ -1,3 +1,4 @@
+import Faq from "./sections/Faq"
 import Feature from "./sections/Feature"
 import Hero from "./sections/Hero"
 import HowItWork from "./sections/HowItWork"
@@ -14,10 +15,7 @@ function App() {
       <Feature />
       <Pricing />
       <HowItWork />
-
-      <div className="h-screen bg-sky-500">
-
-      </div>
+      <Faq />
     </div>
   )
 }
